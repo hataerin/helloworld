@@ -21,6 +21,14 @@ app.use('/chat', (req, res) => {
 	res.sendFile(`${__dirname}/public/views/chat.html`);
 })
 
+app.use('/generic', (req, res) => {
+	res.sendFile(`${__dirname}/public/views/generic.html`);
+})
+
+app.use('/elements', (req, res) => {
+	res.sendFile(`${__dirname}/public/views/elements.html`);
+})
+
 
 app.listen(port, () => {
   console.info('listening on %d', port);
