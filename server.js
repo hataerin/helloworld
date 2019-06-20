@@ -21,6 +21,15 @@ app.use('/chat', (req, res) => {
 	res.sendFile(`${__dirname}/public/views/chat.html`);
 })
 
+app.use('/mypage', (req, res) => {
+	res.sendFile(`${__dirname}/public/views/mypage.html`);
+})
+
+app.use('/friends', (req, res) => {
+	res.sendFile(`${__dirname}/public/views/friends.html`);
+})
+
+
 app.use('/generic', (req, res) => {
 	res.sendFile(`${__dirname}/public/views/generic.html`);
 })
